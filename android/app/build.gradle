@@ -16,8 +16,27 @@ android {
         versionName "1.0"
     }
 
+    plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.safeguard.mobile"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.safeguard.mobile"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
     buildTypes {
         release {
+            // Usamos la firma de debug temporalmente para que Codemagic no falle
             signingConfig signingConfigs.debug
         }
     }
