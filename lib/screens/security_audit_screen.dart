@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-// ==========================================
-// PANTALLA DE AUDITORÍA DE SEGURIDAD
-// ==========================================
-
 class SecurityAuditScreen extends StatelessWidget {
   const SecurityAuditScreen({super.key});
 
@@ -18,7 +14,7 @@ class SecurityAuditScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:,
+          children: [
         ),
       ),
     );
