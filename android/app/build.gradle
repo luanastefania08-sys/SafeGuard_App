@@ -1,11 +1,10 @@
 plugins {
-    id "com.android.application" version "8.1.0"
-    id "org.jetbrains.kotlin.android" version "1.8.22"
-    id "dev.flutter.flutter-gradle-plugin" version "1.0.0"
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
 }
 
 android {
-    // Definición de Namespace según estándares recientes de AGP
     namespace "com.safeguard.mobile"
     compileSdk 34
 
@@ -19,7 +18,7 @@ android {
 
     buildTypes {
         release {
-            // Firma de debug para bypass de Keystore ausente en este build
+            // Firma de debug para bypass de Keystore en Codemagic
             signingConfig signingConfigs.debug
             minifyEnabled false
             shrinkResources false
