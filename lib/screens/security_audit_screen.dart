@@ -1,23 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import '../theme/app_theme.dart';
-import '../services/security_audit_service.dart';
 
 // ==========================================
 // PANTALLA DE AUDITORÍA DE SEGURIDAD
 // ==========================================
 
-class SecurityAuditScreen extends StatefulWidget {
+class SecurityAuditScreen extends StatelessWidget {
   const SecurityAuditScreen({super.key});
-
-  @override
-  State<SecurityAuditScreen> createState() => _SecurityAuditScreenState();
-}
-
-class _SecurityAuditScreenState extends State<SecurityAuditScreen>
-    with SingleTickerProviderStateMixin {
-  
-  bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +14,8 @@ class _SecurityAuditScreenState extends State<SecurityAuditScreen>
         title: const Text('Auditoría de Seguridad'),
         backgroundColor: const Color(0xFF0D47A1),
       ),
-      body: Center(
+      body: Container(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:,
