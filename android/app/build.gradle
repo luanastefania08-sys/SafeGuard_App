@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+    // Definición de Namespace según estándares recientes de AGP
     namespace "com.safeguard.mobile"
     compileSdk 34
 
@@ -18,8 +19,20 @@ android {
 
     buildTypes {
         release {
+            // Firma de debug para bypass de Keystore ausente en este build
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
     }
 }
 
