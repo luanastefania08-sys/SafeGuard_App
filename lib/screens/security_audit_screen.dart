@@ -12,9 +12,20 @@ class SecurityAuditScreen extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Center(
+              child: Text(
+                'Análisis de Seguridad en curso...',
+                textAlign: TextAlign.center, // AQUÍ ESTABA EL ERROR: Ahora está dentro de Text, no de TextStyle.
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
