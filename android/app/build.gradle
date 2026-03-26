@@ -18,7 +18,10 @@ android {
 
     buildTypes {
         release {
+            // Importante: Para producción deberás configurar una firma real
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
         }
     }
 
@@ -32,6 +35,10 @@ android {
     }
 }
 
+flutter {
+    source '../..'
+}
+
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
+    // Eliminamos la línea específica de kotlin-stdlib para evitar conflictos de versiones
 }
