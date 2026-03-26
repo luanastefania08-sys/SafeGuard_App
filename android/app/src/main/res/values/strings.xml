@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Anti-Estafa</string>
-    <string name="accessibility_service_description">Anti-Estafa monitorea las aplicaciones en uso para detectar cuando se abre una app bancaria durante una llamada activa — señal de alerta de Vishing. Nunca accede a contenido personal ni transmite datos.</string>
-</resources>
