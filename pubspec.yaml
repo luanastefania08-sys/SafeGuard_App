@@ -34,12 +34,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/
-    - assets/icons/
-    - assets/animations/
-    - assets/sounds/
-flutter_launcher_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/icon.png"
+  # Se eliminaron las líneas de assets (imágenes/sonidos) 
+  # porque las carpetas están vacías y daban error en Codemagic.
